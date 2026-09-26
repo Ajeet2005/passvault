@@ -182,4 +182,4 @@ def test_generate_invalid_length_errors(vault_file, prompts):
 def test_version(vault_file):
     result = runner.invoke(cli.app, ["--version"])
     assert result.exit_code == 0
-    assert "0.1.1" in result.output
+    assert "0.1.2" in result.output

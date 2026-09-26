@@ -34,13 +34,43 @@ we never return garbage plaintext.
 
 ## Install
 
-From PyPI:
+### Option 1 — pipx (recommended)
+
+[pipx](https://pipx.pypa.io/) installs CLI tools in isolated environments and
+puts their commands on your PATH. This is the best way to install `passvault`,
+and it avoids the Windows "`passvault` is not recognized" problem entirely:
+
+```bash
+# install pipx if you don't have it
+python -m pip install --user pipx
+python -m pipx ensurepath   # adds pipx's bin dir to PATH; restart your terminal after
+
+# then install passvault
+pipx install passvault-cli
+passvault init
+```
+
+### Option 2 — pip
 
 ```bash
 pip install passvault-cli
 ```
 
-Or from source:
+> **Windows note:** with a plain `pip install`, the `passvault.exe` launcher
+> lands in your Python `Scripts\` directory (e.g.
+> `...\Python313\Scripts\`), which is often **not** on your PATH — so running
+> `passvault` gives "command not found" / "is not recognized". Either:
+>
+> 1. add that `Scripts\` directory to your PATH, or
+> 2. skip PATH entirely and run the CLI as a module:
+>
+>    ```bash
+>    python -m passvault init
+>    ```
+>
+>    The `-m` form works with every install method, on every OS.
+
+### Option 3 — from source
 
 ```bash
 git clone https://github.com/Ajeet2005/passvault.git
@@ -54,6 +84,9 @@ pip install -e .
 Requires Python 3.10+.
 
 ## Usage
+
+All commands below also work as `python -m passvault <command>` if the
+`passvault` command itself is not on your PATH.
 
 ### Create a vault
 
