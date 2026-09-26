@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+eggs/
+.eggs/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# Local test vault files (never commit real vaults)
+*.dat
+vault.dat
+test-vault/
+tmp_vault*
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
