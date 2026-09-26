@@ -2,6 +2,11 @@
 
 A local, encrypted, offline password manager CLI.
 
+> **PyPI note:** the distribution is published as
+> [`passvault-cli`](https://pypi.org/project/passvault-cli/) because the name
+> `passvault` was already taken. The installed command and import name are
+> still `passvault`.
+
 - No network calls, no accounts, no telemetry.
 - Everything lives in a single encrypted file on your machine.
 - Your master password is required on **every** command. There is no session
@@ -29,10 +34,16 @@ we never return garbage plaintext.
 
 ## Install
 
-From source (recommended while the project is young):
+From PyPI:
 
 ```bash
-git clone https://github.com/example/passvault.git
+pip install passvault-cli
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/Ajeet2005/passvault.git
 cd passvault
 python -m venv .venv
 # Windows: .venv\Scripts\activate
