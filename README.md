@@ -151,4 +151,4 @@ battle-tested password manager.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/Ajeet2005/passvault/blob/main/LICENSE).

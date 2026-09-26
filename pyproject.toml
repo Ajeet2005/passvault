@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 # PyPI distribution name; the importable package remains `passvault`.
 name = "passvault-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "A local, encrypted, offline password manager CLI."
 readme = "README.md"
 requires-python = ">=3.10"
